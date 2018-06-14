@@ -1,4 +1,5 @@
-//Generate a deck of card into an array
+//https://codegolf.stackexchange.com/questions/166623/generate-a-deck-of-cards
+//Generate a deck of cards and place into an array
 
 let pos, run = 1;
 let array = ["AC"];
@@ -14,10 +15,9 @@ for (let i = 1; i <= 4; i++) {
     } else if (i === 4) {
         suit = "S";
     }
-    //Number
+    //Generate Number
     for (let i = 1; i <= 13; i++) {
         let num;
-        //Number
         if (i === 1) {
             num = "A";
         } else if (i === 13) {
@@ -29,6 +29,7 @@ for (let i = 1; i <= 4; i++) {
         } else {
             num = i;
         }
+        //Push Results into array
         array.push(num + suit);
     }
 }
